@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Austin Calvelage | Developer</title>
+        <script src="https://kit.fontawesome.com/358e669857.js" crossorigin="anonymous"></script>
         <script src="../scripts.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,43 +15,107 @@
         <link rel="stylesheet" href="./styles/flexbox.css" />
         <link rel="stylesheet" href="./styles/styles.css" />
     </head>
-    <nav class="navbar">
-        <div class="navbar-logo-container">
-            <span class="style-bracket">&lt</span>Welcome<span class="style-bracket">/&gt</span>
-        </div>
-        <a href="#" class="toggle-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li class="nav-item"><a href="#home-section">HOME</a></li>
-                <li class="nav-item"><a href="#about-section">ABOUT</a></li>
-                <li class="nav-item"><a href="#portfolio">PORTFOLIO</a></li>
-                <li class="nav-item"><a href="#contact">CONTACT</a></li>
-                <li class="nav-item"><a href="#resume">RESUME</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="home-section" class="d--f fd--c jc--c ai--c">
-        <div class="heading-container">
-            <h1 class="primary-heading">Austin Calvelage</h1>
-            <h2 class="secondary-heading">WEB DEVELOPER</p>
-        </div>
-    </section>
-    <section id="about-section">
 
-    </section>
-    <section id="portfolio-section">
-
-    </section>
-    <section id="contact-section">
-
-    </section>
 
     <body>
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-logo-container">
+                        <span class="style-bracket">&lt</span>Welcome<span class="style-bracket">/&gt</span>
+                    </div>
+                    <button class="toggle-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <div class="navbar-links">
+                        <ul>
+                            <a href="#home-section">
+                                <li class="nav-item">HOME</li>
+                            </a>
+                            <a href="#about">
+                                <li class="nav-item">ABOUT</li>
+                            </a>
+                            <a href="#portfolio">
+                                <li class="nav-item">PORTFOLIO</li>
+                            </a>
+                            <a href="#contact">
+                                <li class="nav-item">CONTACT</li>
+                            </a>
+                            <a href="#resume">
+                                <li class="nav-item">RESUME</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="home-section" class="d--f fd--c jc--c ai--c">
+                <div class="heading-container">
+                    <h1 class="primary-heading">Austin Calvelage</h1>
+                    <h2 class="secondary-heading">WEB DEVELOPER</p>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="wrapper">
+                    <h2 class="about-section-title" id="about">About Me!</h2>
+                    <img src="images/austin.png" class="img-me" alt="Austin with his dog" />
+                    <p class="intro-p">
+                        Hi, I'm Austin! I am a self taught Web Developer looking to make a
+                        career change from manufacturing into a junior developer position to
+                        further my learning and personal growth with hands on experience with
+                        real world problems/projects. I love the endless learning of new skills/technologies
+                        and problem solving that comes along with building websites and web apps!
+                    </p>
+                    <h3 class="skills-title">Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fab fa-html5 fa-4x"></i></li>
+                        <li><i class="fab fa-css3-alt fa-4x"></i></li>
+                        <li><i class="fab fa-js fa-4x"></i></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio-section">
+                <div class="wrapper">
+                    <h2 class="projects-title" id="portfolio">Projects</h2>
+                    <div class="projects-container">
+                        <div class="project">
+                            <h3 class="project-title">Minimalism Blog</h3>
+                            <img src="images/minimalismBlog.png" alt="Minmalism Blog snapshot" class="project-img" />
+                            <p class="project-description">A minimalism blog built with a responive design utillizing FlexBox.</p>
+                            <div class="project-links-container">
+                                <a class="project-links" href="https://github.com/austincalvelage/MinimalismBlog">Github</a>
+                                <a class="project-links" href="https://austincalvelage.github.io/MinimalismBlog/">Live Project</a>
+                            </div>
+                        </div>
 
+                        <div class="project">
+                            <h3 class="project-title">Todo App</h3>
+                            <img src="images/todoApp.png" alt="Todo List App Snapshot" class="project-img" />
+                            <p class="project-description">A todo app built with vanilla javascript utilitizing the sortable JS library for draggable reordering.</p>
+                            <div class="project-links-container">
+                                <a class="project-links" href="https://github.com/austincalvelage/Vanilla-Todo-List">Github</a>
+                                <a class="project-links" href="https://austincalvelage.github.io/Vanilla-Todo-List/">Live Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-section">
+                <div class="wrapper">
+                    <h2 class="contact-title" id="contact">Contact Me!</h2>
+                    <p>
+                        If you have any questions or would like to get in contact with me you can send me your information via the form below, or feel free to
+                        contact me via email or my social links!
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Name" />
+                        <input type="text" placeholder="Email" />
+                    </form>
+                </div>
+
+            </section>
+        </div>
     </body>
 
 </html>
