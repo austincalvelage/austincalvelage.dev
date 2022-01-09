@@ -247,20 +247,21 @@ section {
   border: 0.5rem solid rgba(244, 185, 66, 0.8);
   box-shadow: #f06449 5px 5px;
 }
-.skills-list {
-  width: 25%;
-}
-.contact-list {
-  width: 20%;
-}
 .skills-list,
 .contact-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin-bottom: 3rem;
+}
+
+.skills-list {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contact-list {
+  grid-template-columns: 1fr 1fr;
 }
 
 .skills-list li,
