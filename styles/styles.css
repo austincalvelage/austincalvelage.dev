@@ -63,7 +63,6 @@ header {
   right: 1rem;
   width: 31px;
   height: 21px;
-  appearance: none;
   background-color: transparent;
   border: none;
 }
@@ -215,7 +214,8 @@ section {
 
 .about-section-title,
 .skills-title,
-.projects-title {
+.projects-title,
+.contact-title {
   color: #fff;
   border-bottom: rgba(244, 185, 66, 0.9) 2px solid;
 }
@@ -243,19 +243,21 @@ section {
   text-align: center;
   padding: 1rem;
   margin-bottom: 2rem;
-  max-width: 60%;
+  max-width: 75%;
   border: 0.5rem solid rgba(244, 185, 66, 0.8);
   box-shadow: #f06449 5px 5px;
 }
 
-.skills-list {
+.skills-list,
+.contact-list {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding-bottom: 3rem;
 }
 
-.skills-list li {
+.skills-list li,
+.contact-list li {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -263,12 +265,11 @@ section {
   margin-right: 0.8rem;
   border-radius: 5px;
   border: rgba(244, 185, 66, 0.9) solid 2px;
+  color: #fff;
 }
 
-.fa-html5,
-.fa-css3-alt,
-.fa-js {
-  color: #fff;
+.contact-list li:hover {
+  opacity: 0.7;
 }
 
 @media (min-width: 1000px) {
@@ -383,15 +384,3 @@ section {
   }
 }
 /* *********** -PORTFOLIO SECTION END- ************* */
-
-/* *********** -CONTACT SECTION START- ************* */
-#contact-section {
-  height: 100vh;
-  background-color: #17bebb;
-}
-
-.contact-title {
-  color: #233f57;
-}
-
-/* *********** -CONTACT SECTION END- ************* */
