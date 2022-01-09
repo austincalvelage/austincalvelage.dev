@@ -247,22 +247,26 @@ section {
   border: 0.5rem solid rgba(244, 185, 66, 0.8);
   box-shadow: #f06449 5px 5px;
 }
-
+.skills-list {
+  width: 25%;
+}
+.contact-list {
+  width: 20%;
+}
 .skills-list,
 .contact-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   list-style-type: none;
-  padding-bottom: 3rem;
+  padding: 0;
+  margin-bottom: 3rem;
 }
 
 .skills-list li,
 .contact-list li {
-  display: flex;
-  justify-content: center;
   padding: 10px;
   background-color: #f06449;
-  margin-right: 0.8rem;
   border-radius: 5px;
   border: rgba(244, 185, 66, 0.9) solid 2px;
   color: #fff;
