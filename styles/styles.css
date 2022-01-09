@@ -17,8 +17,8 @@ h2 {
 }
 
 h2 {
-  font-size: 2rem;
-  scroll-margin-top: 7.125rem;
+  font-size: 3rem;
+  scroll-margin-top: 10rem;
 }
 
 h3 {
@@ -209,7 +209,7 @@ section {
 
 .projects-title,
 .about-section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .about-section-title,
@@ -270,6 +270,7 @@ section {
 
 .contact-list li:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 @media (min-width: 1000px) {
