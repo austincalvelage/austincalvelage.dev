@@ -327,6 +327,7 @@ section {
   font-family: "Rampart One", cursive;
   color: #fff;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .project-img {
@@ -386,7 +387,7 @@ section {
 @media (min-width: 1200px) {
   .projects-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 /* *********** -PORTFOLIO SECTION END- ************* */
