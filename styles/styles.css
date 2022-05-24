@@ -247,12 +247,14 @@ section {
   border: 0.5rem solid rgba(244, 185, 66, 0.8);
   box-shadow: #f06449 5px 5px;
 }
+
 .skills-list,
 .contact-list {
   display: grid;
   gap: 1rem;
   justify-content: center;
   list-style-type: none;
+  justify-items: center;
   padding: 0;
   margin-bottom: 3rem;
 }
@@ -266,11 +268,15 @@ section {
 
 .skills-list li,
 .contact-list li {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f06449;
   border-radius: 5px;
   border: rgba(244, 185, 66, 0.9) solid 2px;
   color: #fff;
+  min-width: 80px;
+  min-height: 80px;
 }
 
 .contact-list li:hover {
@@ -291,6 +297,13 @@ section {
   .intro-p {
     place-self: center;
   }
+
+  .skills-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .contact-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 /* *********** -ABOUT SECTION END- ************* */
@@ -306,6 +319,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .project {
@@ -376,6 +390,7 @@ section {
   .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .project {
@@ -385,9 +400,10 @@ section {
 }
 
 @media (min-width: 1200px) {
-  .projects-container {
+  /* .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+    justify-content: center;
+  } */
 }
 /* *********** -PORTFOLIO SECTION END- ************* */
